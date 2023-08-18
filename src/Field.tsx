@@ -1,5 +1,5 @@
-import type { Component, Setter } from 'solid-js';
-import { Show, onMount } from 'solid-js';
+import type { Accessor, Component, Setter } from 'solid-js';
+import { Show, createEffect, createSignal, onMount } from 'solid-js';
 
 type FieldProps = {
   label: string;
@@ -69,18 +69,15 @@ const TextAreaField: Component<FieldProps> = ({ label, name, placeholder, type, 
 const Field: Component<FieldProps> = ({ label, name, type, placeholder, setRef }) => {
   return (
     <>
-      <Show
-        when={type === 'textarea'}
-        fallback={
-          <InputField
-            label={label}
-            name={name}
-            placeholder={placeholder}
-            type={type}
-            setRef={setRef}
-          />
-        }
-      >
+      {type !== 'textarea' ? (
+        <InputField
+          label={label}
+          name={name}
+          placeholder={placeholder}
+          type={type}
+          setRef={setRef}
+        />
+      ) : (
         <TextAreaField
           label={label}
           name={name}
@@ -88,7 +85,7 @@ const Field: Component<FieldProps> = ({ label, name, type, placeholder, setRef }
           type={type}
           setRef={setRef}
         />
-      </Show>
+      )}
     </>
   );
 };
