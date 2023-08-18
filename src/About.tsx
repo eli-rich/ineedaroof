@@ -8,6 +8,8 @@ const About: Component = () => {
           src='https://placehold.co/600x800'
           alt='placeholder'
           class='mx-auto w-2/3 rounded-md border-2 border-blue-950 sm:w-1/2'
+          width={600}
+          height={800}
         />
         <div class='text-center text-white sm:text-left'>
           <h2 class='text-xl'>About Me</h2>
