@@ -34,7 +34,7 @@ const InputField: Component<FieldProps> = ({ label, name, type, placeholder, set
           id={name}
           name={name}
           placeholder={placeholder}
-          class='h-10 rounded-sm p-2'
+          class='font-mukta h-10 rounded-sm p-2'
           ref={inputRef!}
         />
       </div>
@@ -58,7 +58,7 @@ const TextAreaField: Component<FieldProps> = ({ label, name, placeholder, type, 
           id={name}
           name={name}
           placeholder={placeholder}
-          class='h-28 rounded-sm p-2'
+          class='font-mukta h-28 rounded-sm p-2'
           ref={textAreaRef}
         />
       </div>

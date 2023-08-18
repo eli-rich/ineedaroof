@@ -13,7 +13,7 @@ const Header: Component = () => {
         </div>
         <p class='text-lg uppercase text-gray-400 lg:text-xl'>
           By{' '}
-          <a href='https://youtu.be/dQw4w9WgXcQ' target='__blank' class='underline'>
+          <a href='https://youtu.be/dQw4w9WgXcQ' target='__blank' class='font-mukta underline'>
             Baron Built Homes
           </a>
         </p>

@@ -1,5 +1,6 @@
 import { createSignal, type Component } from 'solid-js';
 import Field from './Field';
+import Button from './Button';
 
 const Contact: Component = () => {
   let [nameRef, setNameRef] = createSignal<HTMLInputElement>();
@@ -38,13 +39,9 @@ const Contact: Component = () => {
           placeholder='Your Message...'
           setRef={setMessageRef}
         />
-        <button
-          type='submit'
-          class='w-full rounded-md bg-blue-500 py-2 text-xl font-semibold text-white hover:bg-blue-600'
-          onclick={handleSubmit}
-        >
+        <Button type='submit' onclick={handleSubmit}>
           Send Message
-        </button>
+        </Button>
       </form>
     </>
   );
