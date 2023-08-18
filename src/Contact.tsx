@@ -3,30 +3,37 @@ import Field from './Field';
 import Button from './Button';
 
 const Contact: Component = () => {
-  let [nameRef, setNameRef] = createSignal<HTMLInputElement>();
-  let [emailRef, setEmailRef] = createSignal<HTMLInputElement>();
-  let [messageRef, setMessageRef] = createSignal<HTMLTextAreaElement>();
+  const [nameRef, setNameRef] = createSignal<HTMLInputElement>();
+  const [addressRef, setAddressRef] = createSignal<HTMLInputElement>();
+  const [emailRef, setEmailRef] = createSignal<HTMLInputElement>();
+  const [messageRef, setMessageRef] = createSignal<HTMLTextAreaElement>();
 
-  let [showNameError, setShowNameError] = createSignal(false);
-  let [showEmailError, setShowEmailError] = createSignal(false);
-  let [showMessageError, setShowMessageError] = createSignal(false);
+  const [showNameError, setShowNameError] = createSignal(false);
+  const [showAddressError, setShowAddressError] = createSignal(false);
+  const [showEmailError, setShowEmailError] = createSignal(false);
+  const [showMessageError, setShowMessageError] = createSignal(false);
 
   const handleSubmit = (e: Event) => {
     e.preventDefault();
     const name = nameRef()?.value;
+    const address = addressRef()?.value;
     const email = emailRef()?.value;
     const message = messageRef()?.value;
+
     if (!name) setShowNameError(true);
+    if (!address) setShowAddressError(true);
     if (!email) setShowEmailError(true);
     if (!message) setShowMessageError(true);
   };
 
   return (
     <>
+      <h2 class='text-3xl text-white'>Get In Touch</h2>
+      <p class='mb-2 text-gray-400'>Fields with * are required.</p>
       <form class='flex flex-col gap-5 text-gray-400'>
         <div>
           <Field
-            label='Name'
+            label='Name*'
             name='name'
             type='text'
             placeholder='Your Name...'
@@ -43,7 +50,24 @@ const Contact: Component = () => {
         </div>
         <div>
           <Field
-            label='Email'
+            label='Address*'
+            name='address'
+            type='text'
+            placeholder='Your Address...'
+            setRef={setAddressRef}
+          />
+          <p
+            class='font-mukta text-red-400'
+            classList={{
+              invisible: !showAddressError(),
+            }}
+          >
+            Address is not required.
+          </p>
+        </div>
+        <div>
+          <Field
+            label='Email*'
             name='email'
             type='email'
             placeholder='Your Email Address...'
@@ -55,7 +79,7 @@ const Contact: Component = () => {
         </div>
         <div>
           <Field
-            label='Message'
+            label='Message*'
             name='message'
             type='textarea'
             placeholder='Your Message...'
