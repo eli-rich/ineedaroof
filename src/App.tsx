@@ -5,10 +5,6 @@ import About from './About';
 import Footer from './Footer';
 
 const App: Component = () => {
-  alert(
-    "Devin you should play chess. Or at least watch the twitch streamer chess tournement that's going on",
-  );
-  window.location.href = 'https://www.twitch.tv/chess';
   return (
     <>
       <Header />
