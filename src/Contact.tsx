@@ -28,7 +28,7 @@ const Contact: Component = () => {
 
   return (
     <>
-      <h2 class='text-3xl text-white'>Get In Touch</h2>
+      <h2 class='text-3xl capitalize text-white'>Get An Estimate</h2>
       <p class='mb-2 text-gray-400'>Fields with * are required.</p>
       <form class='flex flex-col gap-5 text-gray-400'>
         <div>
