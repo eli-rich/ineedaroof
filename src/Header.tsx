@@ -6,7 +6,7 @@ const Header: Component = () => {
     <>
       <header class='flex flex-col justify-center bg-baron p-8 text-center'>
         <div class='flex items-center justify-center sm:gap-1'>
-          {/* <object data='/public/logo.svg' type='image/svg+xml' class='max-w-sm'></object> */}
+          {/* <object data='/logo.svg' type='image/svg+xml' class='max-w-sm'></object> */}
           <h1 class='text-4xl font-bold uppercase text-white sm:text-5xl lg:text-6xl'>
             ineedaroof.com
           </h1>

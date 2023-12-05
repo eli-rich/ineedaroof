@@ -5,7 +5,7 @@ const About: Component = () => {
     <>
       <section class='mx-auto mb-10 flex max-h-min w-4/5 max-w-lg flex-col justify-center gap-2 sm:flex-row'>
         <img
-          src='/public/family.webp'
+          src='/family.webp'
           alt='placeholder'
           class='mx-auto w-2/3 rounded-md border-2 border-blue-950 sm:w-1/2'
           width={600}
