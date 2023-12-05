@@ -1,15 +1,14 @@
 import type { Component } from 'solid-js';
-import { Icon } from '@iconify-icon/solid';
 
 const Header: Component = () => {
   return (
     <>
-      <header class='flex flex-col justify-center bg-baron p-8 text-center'>
+      <header class='mb-4 flex flex-col justify-center bg-white p-2 text-center'>
         <div class='flex items-center justify-center sm:gap-1'>
-          {/* <object data='/logo.svg' type='image/svg+xml' class='max-w-sm'></object> */}
-          <h1 class='text-4xl font-bold uppercase text-white sm:text-5xl lg:text-6xl'>
+          <object data='/logo.svg' type='image/svg+xml' class='max-w-md'></object>
+          {/* <h1 class='text-4xl font-bold uppercase text-white sm:text-5xl lg:text-6xl'>
             ineedaroof.com
-          </h1>
+          </h1> */}
         </div>
         <p class='text-lg uppercase text-gray-400 lg:text-xl'>
           By{' '}
