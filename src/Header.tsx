@@ -3,9 +3,9 @@ import type { Component } from 'solid-js';
 const Header: Component = () => {
   return (
     <>
-      <header class='mb-4 flex flex-col justify-center bg-white p-2 text-center'>
+      <header class='-mt-8 mb-4 flex flex-col justify-center bg-white pb-2 text-center'>
         <div class='flex items-center justify-center sm:gap-1'>
-          <object data='/logo.svg' type='image/svg+xml' class='max-w-md'></object>
+          <object data='/logo.svg' type='image/svg+xml' class='max-w-sm md:max-w-md'></object>
           {/* <h1 class='text-4xl font-bold uppercase text-white sm:text-5xl lg:text-6xl'>
             ineedaroof.com
           </h1> */}
