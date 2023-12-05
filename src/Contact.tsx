@@ -6,11 +6,13 @@ const Contact: Component = () => {
   const [nameRef, setNameRef] = createSignal<HTMLInputElement>();
   const [addressRef, setAddressRef] = createSignal<HTMLInputElement>();
   const [emailRef, setEmailRef] = createSignal<HTMLInputElement>();
+  const [phoneRef, setPhoneRef] = createSignal<HTMLInputElement>();
   const [messageRef, setMessageRef] = createSignal<HTMLTextAreaElement>();
 
   const [showNameError, setShowNameError] = createSignal(false);
   const [showAddressError, setShowAddressError] = createSignal(false);
   const [showEmailError, setShowEmailError] = createSignal(false);
+  const [showPhoneError, setShowPhoneError] = createSignal(false);
   const [showMessageError, setShowMessageError] = createSignal(false);
 
   const handleSubmit = (e: Event) => {
@@ -18,11 +20,13 @@ const Contact: Component = () => {
     const name = nameRef()?.value;
     const address = addressRef()?.value;
     const email = emailRef()?.value;
+    const phone = phoneRef()?.value;
     const message = messageRef()?.value;
 
     if (!name) setShowNameError(true);
     if (!address) setShowAddressError(true);
     if (!email) setShowEmailError(true);
+    if (!phone) setShowPhoneError(true);
     if (!message) setShowMessageError(true);
   };
 
@@ -42,7 +46,7 @@ const Contact: Component = () => {
           <p
             class='font-mukta text-red-400'
             classList={{
-              invisible: !showNameError(),
+              hidden: !showNameError(),
             }}
           >
             Name is a required field.
@@ -59,7 +63,7 @@ const Contact: Component = () => {
           <p
             class='font-mukta text-red-400'
             classList={{
-              invisible: !showAddressError(),
+              hidden: !showAddressError(),
             }}
           >
             Address is not required.
@@ -73,8 +77,20 @@ const Contact: Component = () => {
             placeholder='Your Email Address...'
             setRef={setEmailRef}
           />
-          <p class='font-mukta text-red-400' classList={{ invisible: !showEmailError() }}>
+          <p class='font-mukta text-red-400' classList={{ hidden: !showEmailError() }}>
             Email is a required field.
+          </p>
+        </div>
+        <div>
+          <Field
+            label='Phone*'
+            name='phone'
+            type='tel'
+            placeholder='Your Phone Number...'
+            setRef={setPhoneRef}
+          />
+          <p class='font-mukta text-red-400' classList={{ hidden: !showPhoneError() }}>
+            Phone is a required field.
           </p>
         </div>
         <div>
@@ -85,7 +101,7 @@ const Contact: Component = () => {
             placeholder='Your Message...'
             setRef={setMessageRef}
           />
-          <p class='font-mukta text-red-400' classList={{ invisible: !showMessageError() }}>
+          <p class='font-mukta text-red-400' classList={{ hidden: !showMessageError() }}>
             Message is a required field.
           </p>
         </div>

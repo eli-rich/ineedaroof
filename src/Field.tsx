@@ -11,7 +11,7 @@ type FieldProps = {
       setRef: Setter<HTMLTextAreaElement | undefined>;
     }
   | {
-      type: 'text' | 'email';
+      type: 'text' | 'email' | 'tel';
       setRef: Setter<HTMLInputElement | undefined>;
     }
 );
@@ -34,7 +34,7 @@ const InputField: Component<FieldProps> = ({ label, name, type, placeholder, set
           id={name}
           name={name}
           placeholder={placeholder}
-          class='font-mukta h-10 rounded-sm p-2'
+          class='h-10 rounded-sm p-2 font-mukta'
           ref={inputRef!}
         />
       </div>
@@ -58,7 +58,7 @@ const TextAreaField: Component<FieldProps> = ({ label, name, placeholder, type, 
           id={name}
           name={name}
           placeholder={placeholder}
-          class='font-mukta h-28 rounded-sm p-2'
+          class='h-28 rounded-sm p-2 font-mukta'
           ref={textAreaRef}
         />
       </div>
