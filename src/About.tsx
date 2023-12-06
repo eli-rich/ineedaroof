@@ -3,7 +3,7 @@ import { type Component } from 'solid-js';
 const About: Component = () => {
   return (
     <>
-      <section class='mx-auto mb-10 flex max-h-min w-4/5 max-w-lg flex-col justify-center gap-2 sm:flex-row'>
+      <section class='mx-auto mb-10 flex max-h-min w-4/5 max-w-xl flex-col justify-center gap-2 sm:flex-row'>
         <div class='order-1 text-center text-white sm:order-2 sm:text-left'>
           <h2 class='text-xl'>About Us</h2>
           <p class=''>
@@ -17,11 +17,9 @@ const About: Component = () => {
           </p>
         </div>
         <img
-          src='/family.webp'
+          src='/resized.webp'
           alt='placeholder'
-          class='order-2 mx-auto w-2/3 rounded-md border-2 border-blue-950 sm:order-1 sm:w-1/2'
-          width={600}
-          height={800}
+          class='order-2 mx-auto max-h-96 rounded-md border-2 border-blue-950 sm:order-1'
         />
       </section>
     </>
