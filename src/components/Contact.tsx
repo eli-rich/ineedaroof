@@ -47,7 +47,7 @@ const Contact: Component = () => {
               return (
                 <>
                   <FieldContainer>
-                    <label for='name'>Name</label>
+                    <label for='name'>Name*</label>
                     <input {...props} class={inputFieldClass} />
                   </FieldContainer>
                   {field.error && <ErrorMessage error={field.error} />}
@@ -62,7 +62,7 @@ const Contact: Component = () => {
               return (
                 <>
                   <FieldContainer>
-                    <label for='address'>Address</label>
+                    <label for='address'>Address*</label>
                     <input {...props} class={inputFieldClass} />
                   </FieldContainer>
                   {field.error && <ErrorMessage error={field.error} />}
@@ -83,7 +83,7 @@ const Contact: Component = () => {
               return (
                 <>
                   <FieldContainer>
-                    <label for='email'>Email</label>
+                    <label for='email'>Email*</label>
                     <input {...props} class={inputFieldClass} />
                   </FieldContainer>
                   {field.error && <ErrorMessage error={field.error} />}
@@ -98,7 +98,7 @@ const Contact: Component = () => {
               return (
                 <>
                   <FieldContainer>
-                    <label for='phone'>Phone</label>
+                    <label for='phone'>Phone*</label>
                     <input {...props} class={inputFieldClass} />
                   </FieldContainer>
                   {field.error && <ErrorMessage error={field.error} />}
@@ -159,7 +159,7 @@ const Contact: Component = () => {
               return (
                 <>
                   <FieldContainer>
-                    <label for='message'>Message</label>
+                    <label for='message'>Message*</label>
                     <textarea {...props} class={textAreaFieldClass} />
                   </FieldContainer>
                   {field.error && <ErrorMessage error={field.error} />}
