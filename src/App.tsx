@@ -1,8 +1,8 @@
 import type { Component } from 'solid-js';
-import Header from './Header';
-import Contact from './Contact';
-import About from './About';
-import Footer from './Footer';
+import Header from './components/Header';
+import Contact from './components/Contact';
+import About from './components/About';
+import Footer from './components/Footer';
 
 const App: Component = () => {
   return (

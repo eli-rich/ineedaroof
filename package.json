@@ -22,7 +22,9 @@
     "vite-plugin-solid": "^2.7.0"
   },
   "dependencies": {
-    "solid-js": "^1.7.6"
+    "@modular-forms/solid": "^0.20.0",
+    "solid-js": "^1.7.6",
+    "zod": "^3.22.4"
   },
   "prettier": {
     "tabWidth": 2,
