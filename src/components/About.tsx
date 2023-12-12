@@ -18,7 +18,7 @@ const About: Component = () => {
         </div>
         <img
           src='/resized.webp'
-          alt='placeholder'
+          alt='Portrait of the Baron family.'
           class='order-2 mx-auto max-h-96 rounded-md border-2 border-blue-950 sm:order-1'
         />
       </section>
