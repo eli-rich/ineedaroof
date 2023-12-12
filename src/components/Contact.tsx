@@ -7,7 +7,6 @@ import {
   required,
   type ValidateField,
 } from '@modular-forms/solid';
-import { string } from 'zod';
 
 const FieldContainer: ParentComponent = ({ children }) => (
   <div class='flex flex-col gap-1'>{children}</div>
