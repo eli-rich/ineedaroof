@@ -64,9 +64,9 @@ const Contact: Component = () => {
             <FieldContainer>
               <label for={name}>{label}</label>
               {inputType === 'textarea' ? (
-                <textarea {...props} class={textAreaFieldClass} />
+                <textarea {...props} id={name} class={textAreaFieldClass} />
               ) : inputType === 'select' ? (
-                <select {...props} class='w-full'>
+                <select {...props} id={name} class='w-full'>
                   <option value=''>Select One</option>
                   {options && options.map(option => <option value={option}>{option}</option>)}
                 </select>
@@ -75,6 +75,7 @@ const Contact: Component = () => {
                   {...props}
                   class={inputFieldClass}
                   type={inputType === 'tel' ? 'tel' : 'text'}
+                  id={name}
                 />
               )}
             </FieldContainer>
