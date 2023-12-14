@@ -28,7 +28,7 @@ const Contact: Component = () => {
 
   const submitHandler: SubmitHandler<FormType> = async (values, event) => {
     event.preventDefault();
-    const response = await fetch('https://formspree.io/f/meqbypgl', {
+    const response = await fetch('https://formspree.io/f/mrgnzzol', {
       method: 'POST',
       body: JSON.stringify(values),
       headers: {
