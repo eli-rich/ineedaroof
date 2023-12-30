@@ -9,7 +9,7 @@ const Footer: Component = () => {
           target='__blank'
           class='mb-2 text-center font-mukta text-xl text-gray-400 hover:underline'
         >
-          Discover more of what Baron Built Homes can offer you. Click here!
+          Discover more of what Baron Built Homes has to offer!
         </a>
         <a
           href='https://youtu.be/dQw4w9WgXcQ'
