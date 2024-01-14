@@ -3,7 +3,7 @@ import { type Component } from 'solid-js';
 const About: Component = () => {
   return (
     <>
-      <section class='mx-auto mb-10 flex max-h-min w-4/5 max-w-xl flex-col items-center justify-center gap-2 bg-gray-600 p-4 sm:flex-row'>
+      <section class='mx-auto mb-10 flex max-h-min w-4/5 max-w-xl flex-col items-center justify-center gap-2 p-4 sm:flex-row'>
         <div class='order-1 text-center text-white sm:order-2 sm:text-left'>
           <h2 class='text-xl'>About Us</h2>
           <p class=''>

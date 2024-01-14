@@ -39,7 +39,7 @@ const Contact: Component = () => {
     if (!data || !data.ok) {
       console.error(data);
       setMessage(
-        'There was an error submitting your form. Please contact the site owner at (555) 555-5555',
+        'There was an error submitting your form. Please contact the site owner at (251) 279-0266',
       );
       setTitle('Error');
       setShowModal(true);
