@@ -14,7 +14,7 @@ const Footer: Component = () => {
         <a
           href='https://baronbuilthomes.com'
           target='__blank'
-          class='mx-auto transform rounded-md bg-blue-500 p-2 text-xl font-bold uppercase text-white transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-600'
+          class='mx-auto transform rounded-md bg-blue-700 p-2 text-xl font-bold uppercase text-white transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-800'
         >
           baronbuilthomes.com
         </a>
