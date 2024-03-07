@@ -23,8 +23,8 @@ const Contact: Component = () => {
   const [title, setTitle] = createSignal<string | undefined>(undefined);
   const [showModal, setShowModal] = createSignal(false);
 
-  const inputFieldClass = 'h-10 rounded-sm p-2 font-mukta';
-  const textAreaFieldClass = 'h-28 rounded-sm p-2 font-mukta';
+  const inputFieldClass = 'h-10 rounded-sm p-2 font-mukta text-black';
+  const textAreaFieldClass = 'h-28 rounded-sm p-2 font-mukta text-black';
 
   const submitHandler: SubmitHandler<FormType> = async (values, event) => {
     event.preventDefault();
@@ -66,7 +66,7 @@ const Contact: Component = () => {
               {inputType === 'textarea' ? (
                 <textarea {...props} id={name} class={textAreaFieldClass} />
               ) : inputType === 'select' ? (
-                <select {...props} id={name} class='w-full'>
+                <select {...props} id={name} class='w-full text-black'>
                   <option value=''>Select One</option>
                   {options && options.map(option => <option value={option}>{option}</option>)}
                 </select>
