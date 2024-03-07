@@ -162,7 +162,7 @@ const Contact: Component = () => {
         </div>
         <button
           type='submit'
-          class='w-full rounded-md bg-blue-500 py-2 text-xl font-semibold text-white hover:bg-blue-600'
+          class='w-full rounded-md bg-blue-700 py-2 text-xl font-semibold text-white hover:bg-blue-800'
         >
           Submit
         </button>
