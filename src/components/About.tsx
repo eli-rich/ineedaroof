@@ -23,9 +23,11 @@ const About: Component = () => {
             </p>
           </div>
           <img
-            src='/resized.webp'
+            src='img/resized.webp'
+            width='756'
+            height='1008'
             alt='Portrait of the Baron family.'
-            class='order-2 mx-auto max-h-96 rounded-md border-2 border-blue-950 sm:order-1'
+            class='order-2 mx-auto h-auto w-3/4 rounded-md border-2 border-blue-950 sm:order-1 sm:w-1/2'
           />
         </section>
       </main>
