@@ -4,6 +4,12 @@ const Footer: Component = () => {
   return (
     <>
       <footer class='mt-10 flex flex-col pb-5'>
+        <p class='mb-4 text-center font-mukta text-2xl text-white'>
+          Call us at{' '}
+          <a href='tel:2512790266' class='hover:underline'>
+            251-279-0266
+          </a>
+        </p>
         <a
           href='https://baronbuilthomes.com'
           target='__blank'
