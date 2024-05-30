@@ -12,6 +12,12 @@ const Header: Component = () => {
             aria-label='Logo for "I Need a Roof"'
           ></object>
         </div>
+        <h1 class='text-xl font-bold text-gray-800'>
+          Call us at{' '}
+          <a href='tel:2512790266' class='hover:underline'>
+            251-279-0266
+          </a>
+        </h1>
       </header>
     </>
   );

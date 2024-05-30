@@ -3,7 +3,7 @@ import { Component } from 'solid-js';
 const Testimonial: Component = () => {
   return (
     <section class='mt-5 grid content-center items-center justify-center'>
-      <div class='mb-10 flex max-h-min max-w-2xl flex-col items-center justify-center gap-2 p-4 text-white'>
+      <div class='flex max-h-min max-w-2xl flex-col items-center justify-center gap-2 p-4 text-white'>
         <h2 class='text-2xl'>Testimonial</h2>
         <p>
           "In September of 2023, I needed a new roof for the home my 93 year old father lives in as
