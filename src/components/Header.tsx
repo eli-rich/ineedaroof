@@ -12,8 +12,8 @@ const Header: Component = () => {
             aria-label='Logo for "I Need a Roof"'
           ></object>
         </div>
-        <div class='fixed top-0 z-50 w-full bg-white'>
-          <h1 class='text-2xl font-bold text-gray-800'>
+        <div class='fixed top-0 z-50 w-full bg-[#FADD90]'>
+          <h1 class='text-2xl font-bold text-black'>
             Call us at{' '}
             <a href='tel:2512790266' class='hover:underline'>
               251-279-0266
