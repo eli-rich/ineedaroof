@@ -4,18 +4,14 @@ const Gallery: Component = () => {
   return (
     <section class='mx-auto mb-10 max-w-2xl'>
       <div class='w-full p-2 text-left'>
+        <ul class='mb-1 list-inside list-disc text-lg text-white'>
+          <li>Have a leak in your roof?</li>
+          <li>Roof got damaged in a tornado or hurricane?</li>
+          <li>Want your current roof repaired?</li>
+          <li>Need a new roof designed to withstand high winds, hail, and hurricanes?</li>
+          <li>Looking for a FORTIFIED ROOF?</li>
+        </ul>
         <p class='text-lg text-white'>
-          Have a leak in your roof?
-          <br />
-          Roof got damaged in a tornado or hurricane?
-          <br />
-          Want your current roof repaired?
-          <br />
-          Need a new roof designed to withstand high winds, hail, and hurricanes?
-          <br />
-          Looking for a FORTIFIED ROOF?
-          <br />
-          <br />
           We want to help! We do roofs and re-roofs, and we take pride in everything we do, treating
           each project with care and consideration. Call us today or fill out the form below!
         </p>
